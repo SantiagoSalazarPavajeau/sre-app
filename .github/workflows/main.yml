@@ -26,8 +26,8 @@ jobs:
         terraform_version: 1.6.6
 
     - name: Install Go dependencies
-      run: cd test && go mod tidy
+      run: cd /test && go mod tidy
 
     - name: Run Terratest
-      run: cd test && go test . -v
+      run: cd /test && go test . -v
 
